@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>设备跳转平台</title>
+    <style>
+        .device-btn {
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #pc-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        #mobile-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .device-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <!-- 使用相对路径的优化版本 -->
+        <button 
+            class="device-btn" 
+            id="pc-btn" 
+            onclick="window.location.href = 'dl.html'">
+            PC
+        </button>
+        
+        <button 
+            class="device-btn" 
+            id="mobile-btn" 
+            onclick="window.location.href = 'a/dl.html'">
+            手机
+        </button>
+    </div>
+</body>
+</html>
